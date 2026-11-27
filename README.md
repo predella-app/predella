@@ -29,7 +29,7 @@ edges, and tell us about them.
 Or download and install it in one go: paste this into a terminal (it asks for your password).
 
 ```
-cd ~/Downloads && wget https://github.com/predella-app/predella/releases/download/v0.3.0/predella_0.3.0_amd64.deb && sudo apt install ./predella_0.3.0_amd64.deb
+cd ~/Downloads && wget -O predella_0.3.0_amd64.deb https://github.com/predella-app/predella/releases/download/v0.3.0/predella_0.3.0_amd64.deb && sudo apt install ./predella_0.3.0_amd64.deb
 ```
 
 ## Updates
