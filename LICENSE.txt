@@ -1,0 +1,12 @@
+Predella
+Copyright (c) 2026 Predella. All rights reserved.
+
+Predella is free to use. You may share it, as long as each copy is complete and unchanged.
+
+PREDELLA IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. IN NO EVENT SHALL
+PREDELLA OR ITS AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+Predella includes open-source components under their own licenses, listed in THIRD-PARTY-NOTICES.txt.
+Nothing here limits the rights those licenses give you, including changing and replacing the LGPL
+libraries.
