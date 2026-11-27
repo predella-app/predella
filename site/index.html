@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Predella: a gallery, viewer and note editor for your folders</title>
+<meta name="description" content="Predella shows your newest files as big pictures, opens anything without leaving the app, and lets you write and link your notes. Free, for Linux.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #f6f6f4; --card: #ffffff; --ink: #1e2025; --muted: #5d626c; --line: #e2e3e0;
+    --accent: #ffd866; --accent-ink: #1e2025; --code: #1e2025; --code-ink: #e8eaee;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Mono", "Ubuntu Mono", "DejaVu Sans Mono", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16171b; --card: #1e2025; --ink: #eceef2; --muted: #a2a7b1; --line: #2c2f36; --code: #0f1013; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--sans); }
+  main { max-width: 760px; margin: 0 auto; padding: 72px 24px 48px; }
+  .hero { display: grid; gap: 20px; justify-items: start; }
+  .hero img { width: 72px; height: 72px; }
+  h1 { font-size: clamp(40px, 7vw, 56px); line-height: 1.05; letter-spacing: -0.02em; margin: 0; }
+  h1 small { font-size: 0.32em; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted);
+             vertical-align: middle; margin-left: 10px; border: 1px solid var(--line); padding: 3px 9px; border-radius: 99px; }
+  .lede { font-size: 22px; line-height: 1.45; margin: 0; max-width: 34em; }
+  .story { color: var(--muted); font-style: italic; margin: 0; max-width: 36em; }
+  .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 22px; margin-top: 8px; }
+  .btn { display: inline-flex; align-items: center; gap: 10px; background: var(--accent); color: var(--accent-ink);
+         font-weight: 650; text-decoration: none; padding: 13px 22px; border-radius: 12px; }
+  .btn:hover { filter: brightness(0.96); }
+  .btn:focus-visible, a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+  .meta { color: var(--muted); font-size: 15px; }
+  a { color: inherit; text-underline-offset: 3px; }
+  section { margin-top: 64px; }
+  h2 { font-size: 22px; margin: 0 0 14px; letter-spacing: -0.01em; }
+  ul.features { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  ul.features li { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  ul.features b { display: block; }
+  ul.features span { color: var(--muted); }
+  ol { padding-left: 22px; margin: 0; }
+  ol li + li { margin-top: 6px; }
+  .cmd { position: relative; margin-top: 18px; }
+  .cmd p { margin: 0 0 8px; color: var(--muted); font-size: 15px; }
+  pre { margin: 0; background: var(--code); color: var(--code-ink); border-radius: 12px; padding: 16px 18px; padding-right: 92px;
+        font: 14px/1.55 var(--mono); white-space: pre-wrap; word-break: break-all; }
+  .copy { position: absolute; right: 10px; bottom: 10px; font: 600 13px var(--sans); color: var(--code-ink); background: transparent;
+          border: 1px solid #3a3e47; border-radius: 8px; padding: 6px 10px; cursor: pointer; }
+  .copy:hover { border-color: var(--accent); }
+  code { font: 0.92em var(--mono); }
+  .note { color: var(--muted); }
+  footer { max-width: 760px; margin: 0 auto; padding: 32px 24px 56px; border-top: 1px solid var(--line); color: var(--muted);
+           font-size: 15px; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="icon.svg" alt="" width="72" height="72">
+    <h1>Predella <small>Beta</small></h1>
+    <p class="lede">A gallery, viewer and note editor for your folders. See your newest files as big pictures, open anything without leaving the app, and write and link your notes, all in one window.</p>
+    <p class="story">A predella is the row of small paintings beneath the main panel of an altarpiece: the gallery under the big picture.</p>
+    <div class="cta">
+      <a class="btn" href="https://github.com/predella-app/predella/releases/download/v0.3.1/predella_0.3.1_amd64.deb">Download for Linux</a>
+      <span class="meta">Version 0.3.1 · Free · Ubuntu, Debian, Linux Mint, Pop!_OS · <a href="https://github.com/predella-app/predella/releases">All versions</a></span>
+    </div>
+  </div>
+
+  <section>
+    <h2>What it does</h2>
+    <ul class="features">
+      <li><b>A gallery of your newest files</b><span>Real previews: pictures (iPhone HEIC too), PDFs, web pages, spreadsheets, Word and PowerPoint files, text.</span></li>
+      <li><b>A viewer for all of them</b><span>Zoom, full screen, and stepping through a folder.</span></li>
+      <li><b>A Markdown note editor</b><span>Live formatting, autosave, [[links]], "Linked from", and a graph of how your notes connect.</span></li>
+      <li><b>Find things</b><span>Search inside your files, a folder view with sorting, and a split view for two files side by side.</span></li>
+      <li><b>Home</b><span>One picture tile per project folder, with where each one stands if you or your AI assistant keep a CurrentState.md in it.</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Install</h2>
+    <ol>
+      <li>Download <code>predella_0.3.1_amd64.deb</code> with the button above.</li>
+      <li>Double-click it. App Center opens: click <b>Install</b>.</li>
+      <li>Open <b>Predella</b> from your apps. The first time, it asks which folders to show.</li>
+    </ol>
+    <div class="cmd">
+      <p>Or download and install it in one go: paste this into a terminal (it asks for your password).</p>
+      <pre id="cmd">cd ~/Downloads &amp;&amp; wget -O predella_0.3.1_amd64.deb https://github.com/predella-app/predella/releases/download/v0.3.1/predella_0.3.1_amd64.deb &amp;&amp; sudo apt install ./predella_0.3.1_amd64.deb</pre>
+      <button class="copy" type="button" data-copy="cmd">Copy</button>
+    </div>
+    <p class="note">Predella tells you when a new version is out (<b>Help → Check for Updates</b>). Install it the same way; your folders and settings stay.</p>
+  </section>
+
+  <section>
+    <h2>With an AI assistant</h2>
+    <p>If an AI assistant keeps notes on your projects, Predella shows where each one stands on its Home tile: what's happening now, countdowns to dates, and what's waiting on you. Paste this into your assistant's instructions (<code>AGENTS.md</code> for most coding assistants, <code>CLAUDE.md</code> for Claude Code):</p>
+    <div class="cmd">
+      <pre id="ai">Keep a file named CurrentState.md in each project folder:
+- "## Now": one or two bullets on what is happening right now.
+- "## Open items": one bullet per open task. Put its date in it when it has one (2026-12-04).
+- When a task needs me, write "waiting on me" in that bullet.
+- Only what is true now. Move finished items to Completed.md in the same folder.</pre>
+      <button class="copy" type="button" data-copy="ai">Copy</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>Everything stays on your computer. No account, no tracking, no data collection. Predella reads the folders you pick and changes nothing in them, except a note's text when you edit it. It contacts only GitHub, to see whether a newer version exists. This website sets no cookies and loads nothing from anywhere else.</p>
+  </section>
+</main>
+<footer>
+  <span>Predella</span>
+  <a href="mailto:hello@predella.org">hello@predella.org</a>
+  <a href="https://github.com/predella-app/predella/issues">Problems and ideas</a>
+  <a href="https://github.com/predella-app/predella/blob/main/LICENSE.txt">License</a>
+  <a href="https://github.com/predella-app/predella">GitHub</a>
+</footer>
+<script>
+  for (const b of document.querySelectorAll('[data-copy]')) b.addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(document.getElementById(b.dataset.copy).textContent); b.textContent = 'Copied'; }
+    catch { b.textContent = 'Select it'; }
+    setTimeout(() => { b.textContent = 'Copy'; }, 1600);
+  });
+</script>
+</body>
+</html>

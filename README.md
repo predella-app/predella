@@ -21,7 +21,7 @@ edges, and tell us about them.
 
 ## Install
 
-1. Download **`predella_0.3.0_amd64.deb`** from the [latest release](../../releases).
+1. Download **`predella_0.3.1_amd64.deb`** from the [latest release](../../releases).
 2. Double-click it. App Center opens: click **Install**.
 3. Open **Predella** from your apps. The first time, it asks which folders to show. Change them
    later: press **Alt**, then **File → Choose Folders**.
@@ -29,7 +29,7 @@ edges, and tell us about them.
 Or download and install it in one go: paste this into a terminal (it asks for your password).
 
 ```
-cd ~/Downloads && wget -O predella_0.3.0_amd64.deb https://github.com/predella-app/predella/releases/download/v0.3.0/predella_0.3.0_amd64.deb && sudo apt install ./predella_0.3.0_amd64.deb
+cd ~/Downloads && wget -O predella_0.3.1_amd64.deb https://github.com/predella-app/predella/releases/download/v0.3.1/predella_0.3.1_amd64.deb && sudo apt install ./predella_0.3.1_amd64.deb
 ```
 
 ## Updates
