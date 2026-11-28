@@ -21,7 +21,7 @@ edges, and tell us about them.
 
 ## Install
 
-1. Download **`predella_0.3.3_amd64.deb`** from the [latest release](../../releases).
+1. Download **`predella_0.3.4_amd64.deb`** from the [latest release](../../releases).
 2. Double-click it. App Center opens: click **Install**.
 3. Open **Predella** from your apps. The first time, it asks which folders to show. Change them
    later: press **Alt**, then **File → Choose Folders**.
@@ -29,16 +29,16 @@ edges, and tell us about them.
 Or download and install it in one go: paste this into a terminal (it asks for your password).
 
 ```
-cd ~/Downloads && wget -O predella_0.3.3_amd64.deb https://github.com/predella-app/predella/releases/download/v0.3.3/predella_0.3.3_amd64.deb && sudo apt install ./predella_0.3.3_amd64.deb
+cd ~/Downloads && wget -O predella_0.3.4_amd64.deb https://github.com/predella-app/predella/releases/download/v0.3.4/predella_0.3.4_amd64.deb && sudo apt install ./predella_0.3.4_amd64.deb
 ```
 
 ### Fedora
 
-Download **`predella-0.3.3.x86_64.rpm`** from the [latest release](../../releases) and double-click it
+Download **`predella-0.3.4.x86_64.rpm`** from the [latest release](../../releases) and double-click it
 (Software opens: click **Install**), or paste this into a terminal:
 
 ```
-cd ~/Downloads && curl -fLo predella-0.3.3.x86_64.rpm https://github.com/predella-app/predella/releases/download/v0.3.3/predella-0.3.3.x86_64.rpm && sudo dnf install ./predella-0.3.3.x86_64.rpm
+cd ~/Downloads && curl -fLo predella-0.3.4.x86_64.rpm https://github.com/predella-app/predella/releases/download/v0.3.4/predella-0.3.4.x86_64.rpm && sudo dnf install ./predella-0.3.4.x86_64.rpm
 ```
 
 ## Updates
